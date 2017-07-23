@@ -1,6 +1,6 @@
 <?php 
 
-
+session_start();
 
 include('connections/connections.php');
 
@@ -30,7 +30,29 @@ $result=mysqli_query($connect,$sql);
 
 if ($result) {
 	echo "data has been successfullyy inserted";
-}}
+	$sql="SELECT firstname FROM register where email='$email' and password='$password'";
+echo "hi";
+$result=mysqli_query($connect,$sql);
+$row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+      $firstname = $row['firstname'];
+      $_SESSION['user'] = $firstname;
+    
+      if ($result) {
+	  header("location: main/POA/index.php");
+		
+
+		}
+
+			}
+		else {
+
+			$error="Email or password is not correct";
+			}
+
+
+
+
+}
 
 
 

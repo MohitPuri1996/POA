@@ -3,7 +3,7 @@
 $servername="localhost";
 $username="root";
 $password="root";
-$database="intern";
+$database="intern"; 
 
 
 
@@ -15,7 +15,7 @@ if($connect->connect_error){
 	 die('Error connecting to MySQL server.');
 }
 
-echo "connected successfully";
+//echo "connected successfully";
 
 
 

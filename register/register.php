@@ -2,7 +2,7 @@
 
 
 include('../connections/connections.php');
-echo "hi";
+
 
 
 $firstname=$_GET['firstname'];
@@ -10,7 +10,7 @@ $lastname=$_GET['lastname'];
 $email=$_GET['email'];
 $password=$_GET['password'];
 
-echo "hi";
+echo $firstname;
 
 $error="";
 $result="";
@@ -26,7 +26,6 @@ $firstname=mysqli_escape_string($connect,(filter_var(strip_tags($firstname),FILT
     $email=mysqli_escape_string($connect,filter_var(strip_tags($email),FILTER_VALIDATE_EMAIL));
  $password=mysqli_escape_string($connect,filter_var(strip_tags($password),FILTER_SANITIZE_STRIPPED));
 
-echo "<br>email" .$email;
 
 $sql="SELECT * FROM register WHERE email='$email'";
 
@@ -42,7 +41,7 @@ if(mysqli_num_rows($result)>0){
 
  }
 
-echo("iuh");
+//echo("iuh");
 echo("eroror") .$error;
 if(empty($error)){	
 
