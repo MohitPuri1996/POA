@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+	<h2>Click to Sign in or Sign up</h2>
+	<button type="button" class="btn btn-success" data-toggle="modal" data-target="#loginpopup">Click</button>
+	
+	<div class="modal fade" id="loginpopup">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<!--Body-->
+				<div class="container">
+				<div class="row">
+                    <div class="col-md-6 col=sm-6">
+                        <div class="form-body">
+                            <ul class="nav nav-tabs final-login">
+                                <li class="active"><a data-toggle="tab" href="#sectionA">Sign In</a></li>
+                                <li><a data-toggle="tab" href="#sectionB">Sign Up</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="sectionA" class="tab-pane fade in active">
+                                    <div class="innter-form">
+                                        <form class="sa-innate-form" method="post">
+                                            <div class="social-login">
+                                                <ul>
+                                                    <li><a href=""><i class="fa fa-facebook aria-hidden="true""></i> Facebook</a></li>
+                                                    <li><a href=""><i class="fa fa-google-plus aria-hidden="true""></i> Google+</a></li>
+                                                </ul>
+                                             </div>
+
+                                            <input type="text" name="username" placeholder="Username">
+                                            <input type="password" name="password" placeholder="Password">
+                                            <button type="submit">Sign In</button>
+                                            <a href="">Forgot Password?</a>
+                                        </form>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div id="sectionB" class="tab-pane fade">
+                                    <div class="social-login">
+                                        <br>
+                                        <ul>
+                                            <li><a href=""><i class="fa fa-facebook aria-hidden="true""></i> Facebook</a></li>
+                                            <li><a href=""><i class="fa fa-google-plus aria-hidden="true""></i> Google+</a></li>
+                                        </ul>
+                                    </div>
+                    			    <div class="innter-form">
+                                        <form class="sa-innate-form" method="post">
+                                        	<input type="text" name="firstrname" Placeholder="Firstame">
+                                        	<input type="text" name="lastrname" Placeholder="Lastname">
+                                            <input type="text" name="username" Placeholder="Username">
+                                            <input type="text" name="username" placeholder="Email Address">
+                                            <input type="password" name="text" placeholder="Phone Number">
+                                            <input type="password" name="password" placeholder="Password">
+                                            <input type="password" name="password" placeholder="Condfirm Password">
+                                            <button type="submit">Sign Up</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
